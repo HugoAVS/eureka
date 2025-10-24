@@ -1,0 +1,19 @@
+server:
+  port: 9094
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka/
+
+application:
+  name: ORDER-SERVICE
+
+data:
+  mongodb:
+    uri: mongodb+srv://orderuser:123@cluster0.nodgvej.mongodb.net/
+    host: localhost
+    port: 27017
+    database: orderdb
+    repositories:
+      enabled: true
